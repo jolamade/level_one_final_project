@@ -1,0 +1,28 @@
+.filter{
+    border: 1px solid #f0f0f0;
+}
+.search{
+    border: 1px solid #f0f0f0;
+}
+.start{
+    background: linear-gradient(90deg,#015eff, #001faa);
+}
+.sign{
+    background-color: #ecf2ff;
+}
+.sec-two{
+    margin-top: 80px;
+}
+.second{
+    margin-left: 400px;
+}
+.English{
+    cursor: pointer;
+}
+.list{
+    display: none;
+}
+.wait:hover .list{
+    display: block  ;
+}
+

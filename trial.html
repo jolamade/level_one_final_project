@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <style>
+    .hero {
+      background-image: url(./images/bg.PNG);
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+      
+    }
+
+
+
+    .hero .container {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .hero-text {
+      font-size: 4.3rem;
+    }
+
+    .share {
+      background-color: white !important;
+      border: 1px solid lightgray !important;
+      margin-left: 3rem !important;
+    }
+
+    .HIRE {
+      min-width: 20vw !important;
+    }
+
+   
+
+
+    .PROA {
+      display: none;
+      margin-top: 30px;
+    }
+
+    .trial:hover .PRO {
+      display: block;
+
+    }
+
+    .harbor {
+      width: 40px;
+      height: 40px;
+      background-image: url(./images/harbor.webp);
+      border-radius: 50%;
+      background-size: cover;
+      background-blend-mode: screen;
+    }
+
+    .danny {
+      width: 40px;
+      height: 40px;
+      background-image: url(./images/danny.webp);
+      border-radius: 50%;
+      background-size: cover;
+      background-blend-mode: screen;
+    }
+
+    .silver {
+      width: 40px;
+      height: 40px;
+      background-image: url(./images/silverstag.webp);
+      border-radius: 50%;
+      background-size: cover;
+      background-blend-mode: screen;
+    }
+
+    .kate {
+      width: 40px;
+      height: 40px;
+      background-image: url(./images/kate.webp);
+      border-radius: 50%;
+      background-size: cover;
+      background-blend-mode: screen;
+    }
+
+    .scroll-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 20px 0;
+    }
+
+    .card {
+      display: inline-block;
+      width: 300px;
+      margin-right: 15px;
+      vertical-align: top;
+      white-space: normal;
+    }
+
+    .tag:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .btn-custom-primary {
+      background-color: #fff;
+      color: #000;
+      border-radius: 50px;
+      padding: 10px 25px;
+      transition: 0.3s;
+    }
+
+    .btn-custom-primary:hover {
+      background-color: #ddd;
+    }
+
+    .btn-custom-secondary {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 50px;
+      padding: 10px 25px;
+      transition: 0.3s;
+    }
+
+    .btn-custom-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .image1 {
+      background-image: url('./images/boost\ your\ projects.webp');
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      border-radius: 15px;
+      margin-left: -10px;
+    }
+
+    .no-dots {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      line-height: 1.8rem;
+    }
+
+    .pricing-card.pro {
+      border: 2px solid #007bff;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .badge-pro {
+      background-color: #007bff;
+      color: #fff;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      margin-left: 0.5rem;
+    }
+
+
+    .no-dots {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .no-dots li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+
+    .pricing-section {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .pricing-card {
+      width: 30vw;
+      height: auto;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .foot:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .foot a {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+
+
+@media (max-width:991px) {
+  .foots{
+                flex-direction: column;
+                align-items: center;
+                justify-self: center;
+            }
+
+            .footer{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                padding: 20px;
+            }
+}
+
+    @media (max-width: 992px) {
+      .adobeC .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+
+    }
+
+    .foot {
+      justify-content: center;
+    }
+
+
+
+    @media (max-width: 480px) {
+      .adobeC {
+        display: block;
+      }
+
+      .card {
+        width: 250px;
+      }
+
+      .hero-text {
+        font-size: 3rem;
+      }
+
+    }
+
+    @media (max-width: 992px) {
+      .pricing-card {
+        width: 45vw;
+      }
+
+      .expand .card {
+        width: 13rem;
+      }
+
+      .card {}
+    }
+
+
+    @media (max-width: 768px) {
+
+      .pricing-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pricing-card {
+        width: 85vw;
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 32px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+      }
+    }
+
+    .customSelect {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.customSelect option{
+    color: black;
+}
+
+.last a{
+    text-decoration: none;
+}
+.last a:hover{
+    text-decoration: underline;
+}
+
+.hover:hover{
+    text-decoration: underline;
+}
+  </style>
+
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark position-sticky top-0" style="z-index: 1000;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light fw-bold" href="#">
+        <img src="./images/behanceee.png" alt="Behance logo" width="100">
+      </a>
+
+
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3 text-capitalize">
+          <li class="nav-item"><a class="nav-link text-light fw-bold" href="trial.html">explore</a></li>
+          <li class="nav-item"><a class="nav-link text-light fw-bold" href="#">jobs</a></li>
+          <li class="nav-item"><a class="nav-link text-light fw-bold" href="#">client work</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light fw-bold" href="#" role="button" data-bs-toggle="dropdown">
+              resources
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold" href="#">overview</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">career guides</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">commissioned projects</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">creative apprenticeship</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light fw-bold" href="#" role="button" data-bs-toggle="dropdown">
+              hire
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold" href="#">Hiring Dashboard</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Freelancers</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Hiring on Behance</a></li>
+              <li><a class="dropdown-item fw-bold" href="#">Create New Job</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-secondary" href="#">Logo Designers</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Brand Designers</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Website Designers</a></li>
+              <li><a class="dropdown-item text-secondary" href="#">Logo Illustrators</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+        <form class="d-lg-none d-xl-flex align-items-center gap-2 flex-wrap">
+          <div class="position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+            <input class="form-control ps-4 py-1 border-0 bg-secondary-subtle rounded-pill" type="search"
+              placeholder="Search..." style="width: 180px;">
+          </div>
+
+          <button class="btn text-light fw-bold rounded-pill border-0"
+            style="background-image: linear-gradient(to right, rgb(0,183,255), blue); white-space: nowrap;">
+            Start free trial
+          </button>
+
+          <button class="btn fw-bold rounded-pill border border-light bg-white text-dark" style="white-space: nowrap;">
+            Share work
+          </button>
+        </form>
+
+
+        <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0 ms-lg-3">
+          <img src="./icons/bi--envelope-fill.svg" alt="Mail icon" width="20">
+          <img src="./icons/bxs--bell.svg" alt="Bell icon" width="20">
+          <div style="width: 30px; height: 30px; border-radius: 50%; background-color: aqua;"></div>
+          <img src="./images/adobe logo.webp" alt="Adobe logo" width="50">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container col-lg-8 col-md-10">
+      <h1 class="hero-text fw-bold text-white">Accelerate Your Creative Career with Behance
+        Pro</h1>
+      <p class="lead mt-3 fw-semibold text-white" style="font-size: 22px;">
+        Take your career further with tools designed to showcase your creativity, reach more people, and earn
+        more—all in one place.
+      </p>
+      <div class="mt-4 mb-5 align-items-center">
+        <button class="btn btn-custom-primary me-2 fw-bold">Start Free Trial</button>
+        <button class="btn btn-custom-secondary fw-bold ">Compare Plans</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="expand container my-5">
+    <div class="row gx-md-3 text-center">
+
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+
+            <div class="d-flex justify-content-center mb-3">
+              <div class="p-3  d-flex align-items-center justify-content-center"
+                style="width:40px; height:40px; border: 1px solid blue; border-radius: 30%;"><img
+                  src="./icons/iconamoon--trend-up-thin.svg" alt="" width="30px">
+              </div>
+            </div>
+            <h5 class="card-title">Expand Your Reach</h5>
+            <p class="card-text">Reach more clients and collaborators and get your work seen by the right people at the
+              right time.</p>
+            <a href="#" class="text-decoration-none" style="color: blue;">Learn More <img
+                src="./icons/iconamoon--arrow-down-2-light (2).svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body" style="height: 40vh;">
+            <div class="d-flex justify-content-center mb-3">
+              <div class="p-3  bg-light d-flex align-items-center justify-content-center"
+                style="width:50px; height:50px;  border: 1px solid green ; border-radius: 30%;">
+                <img src="./icons/streamline-ultimate--money-bag-dollar.svg" alt="" width="30px">
+              </div>
+            </div>
+            <h5 class="card-title">Grow Your Earnings</h5>
+            <p class="card-text">Get exclusive access to premium freelance jobs from top clients—with no platform fees.
+            </p>
+            <a href="#" class="text-decoration-none" style="color: green;">Learn More <img
+                src="./icons/iconamoon--arrow-down-2-light (1).svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm border-0" style="border: 1px solid rgb(235, 12, 235) ;">
+          <div class="card-body">
+            <div class="d-flex justify-content-center mb-3">
+              <div class="p-3  bg-light d-flex align-items-center justify-content-center"
+                style="width:40px; height:40px; border: 1px solid rgb(235, 12, 235); border-radius: 30%;">
+                <img src="./icons/solar--star-shine-linear.svg" alt="" width="40px">
+              </div>
+            </div>
+            <h5 class="card-title">Stand Out from the Crowd</h5>
+            <p class="card-text">Showcase your unique brand with customizations that match who you are as a creative.
+            </p>
+            <a href="#" class="text-decoration-none" style="color:rgb(235, 12, 235) ;">Learn More <img
+                src="./icons/iconamoon--arrow-down-2-light.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center align-items-center gap-3 mb-5">
+    <button class="btn rounded-pill bg-black text-white fw-bold btn-lg fs-6 px-3 py-2 ">start free trial</button>
+    <button class="btn btn-outline-dark rounded-pill px-4 py-2">compare plans</button>
+  </div>
+
+  <div class="container-fluid d-flex justify-content-center align-items-center"
+    style="background-color: #f3f7ff; min-height: 100vh;">
+    <div class="container text-center py-5">
+
+      <div class="p-3 d-flex align-items-center justify-content-center mx-auto mb-3"
+        style="width:40px; height:40px; border: 1px solid blue; border-radius: 30%;">
+        <img src="./icons/iconamoon--trend-up-thin.svg" alt="" width="30px">
+      </div>
+
+      <div class="text-primary fw-bold fs-4">Expand Your Reach</div>
+      <h2 class="fw-bold mt-2 mb-5" style="font-size: 60px;">Get your work seen by more clients and collaborators</h2>
+
+      <button class="btn rounded-pill bg-black text-white fw-bold btn-lg fs-6 px-3 py-2">
+        Start Free Trial
+      </button>
+
+
+
+      <div class="container shadow mt-5 rounded-3" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/boost your projects.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              Boost your projects
+            </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Highlight your best work and make sure it reaches the right eyes at the right time.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container shadow mt-5 rounded-3" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/profile.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              See who's viewed your profile and projects
+            </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Get detailed insights on who's engaging with your work and how they found you,
+              so you can follow up with potential clients and collaborators.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container shadow mt-5 rounded-3" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/get noticed.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              Get noticed
+            </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Schedule your projects to publish at a set day/time to get maximum engagement with your audience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5 shadow rounded-4"
+        style="background-color: blue; max-width: 70rem; border-radius: 20px;">
+        <div class="row g-0 align-items-center text-light p-4">
+
+
+          <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+            <span class="fw-bold" style="font-size: 60px;">45%</span>
+          </div>
+
+
+          <div class="col-12 col-md-8 d-flex justify-content-between align-items-center">
+            <div class="text-light me-3 " style="flex: 1; font-size: 18px; max-width: 60%;">
+              Pro members see their views and <br>engagement increase by an average of <br> <span class="fw-bold">45% in
+                their first month</span>
+            </div>
+            <button class="btn rounded-pill bg-white text-black fw-bold btn-lg fs-6 px-3 py-2">
+              Start free trial
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid d-flex justify-content-center align-items-center"
+    style="background-color: #e6ede6; min-height: 100vh;">
+    <div class="container text-center py-5">
+
+      <div class="p-3 d-flex align-items-center justify-content-center mx-auto mb-3 mt-5"
+        style="width:40px; height:40px; border: 1px solid green; border-radius: 30%;">
+        <img src="./icons/streamline-ultimate--money-bag-dollar.svg" alt="" width="30px">
+      </div>
+
+      <div class=" fw-bold fs-4" style="color: green;">Earn more</div>
+      <h2 class="fw-bold mt-2 mb-5" style="font-size: 60px;">Get access to more jobs and earn <br> more with each job
+      </h2>
+
+      <button class="btn rounded-pill bg-black text-white fw-bold btn-lg fs-6 px-3 py-2">
+        Start Free Trial
+      </button>
+
+
+
+      <div class="container shadow mt-5 rounded-3" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/similar service.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              Confidently price your projects
+            </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Expert tools designed to guide you on pricing projects as competitively as possible.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container shadow mt-5 rounded-3" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/freelance job.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              Access exclusive freelance jobs </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Receive weekly recommendations on freelance jobs that are a best fit for you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container shadow mt-5 rounded-3" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/freelance project.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              0% Platform fees
+            </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Other marketplaces will take up to 50% of what you earn. With Behance Pro, not only will you pay no
+              platform fees. Neither will your clients.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5 shadow rounded-4 mb-5"
+        style="background-color: green; max-width: 70rem; border-radius: 20px;">
+        <div class="row g-0 align-items-center text-light p-4">
+
+
+          <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+            <span class="fw-bold" style="font-size: 60px;">4X</span>
+          </div>
+
+
+          <div class="col-12 col-md-8 d-flex justify-content-between align-items-center">
+            <div class="text-light me-3 " style="flex: 1; font-size: 18px; max-width: 60%;">
+              Pro members on average see <span class="fw-bold">4x the amount of job inquiries</span> and leads after
+              subscribing to Behance Pro</span>
+            </div>
+            <button class="btn rounded-pill bg-white text-black fw-bold btn-lg fs-6 px-3 py-2">
+              Start free trial
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid d-flex justify-content-center align-items-center"
+    style="background-color: #fbf5fc; min-height: 100vh;">
+    <div class="container text-center py-5">
+
+      <div class="p-3 d-flex align-items-center justify-content-center mx-auto mb-3 mt-5"
+        style="width:40px; height:40px; border: 1px solid rgb(177, 5, 177) ; border-radius: 30%;">
+        <img src="./icons/solar--star-shine-linear.svg" alt="" width="30px">
+      </div>
+
+      <div class=" fw-bold fs-4" style="color: rgb(177, 5, 177);">Stand Out from the Crowd</div>
+      <h2 class="fw-bold mt-2 mb-5" style="font-size: 60px;">Personalize your profile to <br> showcase your unique brand
+      </h2>
+
+      <button class="btn rounded-pill bg-black text-white fw-bold btn-lg fs-6 px-3 py-2">
+        Start Free Trial
+      </button>
+
+
+
+      <div class="container shadow mt-5 rounded-3" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/go dark.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              Go dark
+            </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Give your profile a sleek, professional look with light and dark mode options to match your style.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container shadow mt-5 rounded-3" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/flexible.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              Flexible organization </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Organize your projects and services with custom sections, making it easy for clients to navigate and
+              explore your work.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container shadow mt-5 rounded-3" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/more engagement.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              Drive more engagement
+            </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Show people the best way to engage with you by adding a custom button to your profile and projects.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow mt-5 rounded-3 mb-5" style="background-color: #fff; max-width: 70rem;">
+        <div class="row g-0 align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="./images/custom web.webp" alt="Profile"
+              class="img-fluid w-100 h-100 rounded-top-3 rounded-md-start-3 rounded-md-top-0"
+              style="object-fit: cover; margin-left: -24px;">
+          </div>
+
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-5">
+            <h3 class="fw-bold mb-2" style="font-size: 20px; text-align: left;">
+              Your own custom website
+            </h3>
+            <p style="font-size: 18px; margin: 0; text-align: left;">
+              Your Pro membership includes full access to Adobe Portfolio. Build up to 5 fully-branded websites with
+              free hosting and custom domains.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-5">
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <div class="container">
+    <div class="scroll-container">
+      <div class="card p-3 shadow-sm border-primary mb-5" style="border-radius: 20px;">
+
+        <p class="card-text">
+          Behance Pro has been great. I have noticed I am getting <strong>more serious freelance inquiries</strong>
+          since signing up for Pro.
+        </p>
+        <p class="card-text">
+          For me the best feature is the no fees on payments; that is a really big deal. Most other marketplaces do a
+          50/50 split, but Behance pays out a lot, so that was my main reason for going pro.
+        </p>
+        <div class="d-flex align-items-center gap-3 mt-4 ">
+          <div class="harbor tag"></div>
+          <a class="fw-semibold text-decoration-none text-black" href="">Harbor Bickmore</a>
+        </div>
+      </div>
+
+      <div class="card p-3 shadow-sm border-primary" style="border-radius: 20px;">
+        <p class="card-text">
+          Behance Pro has been great. I have noticed I am getting <strong>more serious freelance inquiries</strong>
+          since signing up for Pro.
+        </p>
+        <p class="card-text">
+          For me the best feature is the no fees on payments; that is a really big deal. Most other marketplaces do a
+          50/50 split, but Behance pays out a lot, so that was my main reason for going pro.
+        </p>
+
+        <div class="d-flex align-items-center gap-3 mt-4 ">
+          <div class="danny tag "></div>
+          <a class="fw-semibold text-decoration-none text-black" href="">Danny ivan</a>
+        </div>
+      </div>
+
+      <div class="card p-3 shadow-sm border-primary" style="border-radius: 20px;">
+        <p class="card-text">
+          Behance Pro has been great. I have noticed I am getting <strong>more serious freelance inquiries</strong>
+          since signing up for Pro.
+        </p>
+        <p class="card-text">
+          For me the best feature is the no fees on payments; that is a really big deal. Most other marketplaces do a
+          50/50 split, but Behance pays out a lot, so that was my main reason for going pro.
+        </p>
+        <div class="d-flex align-items-center gap-3 mt-4 ">
+          <div class="kate tag "></div>
+          <a class="fw-semibold text-decoration-none text-black" href="">Kate Anto</a>
+        </div>
+      </div>
+
+      <div class="card p-3 shadow-sm border-primary" style="border-radius: 20px;">
+        <p class="card-text">
+          Behance Pro has been great. I have noticed I am getting <strong>more serious freelance inquiries</strong>
+          since signing up for Pro.
+        </p>
+        <p class="card-text">
+          For me the best feature is the no fees on payments; that is a really big deal. Most other marketplaces do a
+          50/50 split, but Behance pays out a lot, so that was my main reason for going pro.
+        </p>
+        <div class="d-flex align-items-center gap-3 mt-4 ">
+          <div class="silver tag "></div>
+          <a class="fw-semibold text-decoration-none text-black" href="">Silverstag Type Foundry</a>
+        </div>
+      </div>
+
+      <div class="card p-3 shadow-sm border-primary" style="border-radius: 20px;">
+
+        <p class="card-text">
+          Behance Pro has been great. I have noticed I am getting <strong>more serious freelance inquiries</strong>
+          since signing up for Pro.
+        </p>
+        <p class="card-text">
+          For me the best feature is the no fees on payments; that is a really big deal. Most other marketplaces do a
+          50/50 split, but Behance pays out a lot, so that was my main reason for going pro.
+        </p>
+        <div class="d-flex align-items-center gap-3 mt-4 ">
+          <div class="harbor tag"></div>
+          <a class="fw-semibold text-decoration-none text-black" href="">Harbor Bickmore</a>
+        </div>
+      </div>
+
+
+      <div class="card p-3 shadow-sm border-primary" style="border-radius: 20px;">
+
+        <p class="card-text">
+          Behance Pro has been great. I have noticed I am getting <strong>more serious freelance inquiries</strong>
+          since signing up for Pro.
+        </p>
+        <p class="card-text">
+          For me the best feature is the no fees on payments; that is a really big deal. Most other marketplaces do a
+          50/50 split, but Behance pays out a lot, so that was my main reason for going pro.
+        </p>
+        <div class="d-flex align-items-center gap-3 mt-4 ">
+          <div class="silver tag "></div>
+          <a class="fw-semibold text-decoration-none text-black" href="">Silverstag Type Foundry</a>
+        </div>
+      </div>
+
+
+      <div class="card p-3 shadow-sm border-primary" style="border-radius: 20px;">
+
+        <p class="card-text">
+          Behance Pro has been great. I have noticed I am getting <strong>more serious freelance inquiries</strong>
+          since signing up for Pro.
+        </p>
+        <p class="card-text">
+          For me the best feature is the no fees on payments; that is a really big deal. Most other marketplaces do a
+          50/50 split, but Behance pays out a lot, so that was my main reason for going pro.
+        </p>
+        <div class="d-flex align-items-center gap-3 mt-4 ">
+          <div class="danny tag "></div>
+          <a class="fw-semibold text-decoration-none text-black" href="">Danny ivan</a>
+        </div>
+      </div>
+
+
+      <div class="card p-3 shadow-sm border-primary" style="border-radius: 20px;">
+        <p class="card-text">
+          Behance Pro has been great. I have noticed I am getting <strong>more serious freelance inquiries</strong>
+          since signing up for Pro.
+        </p>
+        <p class="card-text">
+          For me the best feature is the no fees on payments; that is a really big deal. Most other marketplaces do a
+          50/50 split, but Behance pays out a lot, so that was my main reason for going pro.
+        </p>
+        <div class="d-flex align-items-center gap-3 mt-4 ">
+          <div class="kate tag "></div>
+          <a class="fw-semibold text-decoration-none text-black" href="">Kate Anto</a>
+        </div>
+      </div>
+
+
+      <div class="card p-3 shadow-sm border-primary" style="border-radius: 20px;">
+
+        <p class="card-text">
+          Behance Pro has been great. I have noticed I am getting <strong>more serious freelance inquiries</strong>
+          since signing up for Pro.
+        </p>
+        <p class="card-text">
+          For me the best feature is the no fees on payments; that is a really big deal. Most other marketplaces do a
+          50/50 split, but Behance pays out a lot, so that was my main reason for going pro.
+        </p>
+        <div class="d-flex align-items-center gap-3 mt-4 ">
+          <div class="danny tag "></div>
+          <a class="fw-semibold text-decoration-none text-black" href="">Danny ivan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class=" text-white py-5 mb-5" style="line-height: 3.0rem;">
+    <div class="container mt-5">
+      <div class="text-center align-items-center">
+        <h2 class="fw-bold text-black" style="font-size: 50px;">Start your 7 day free trial today</h2>
+        <p class="mb-5 text-black" style="font-size: 18px;">Take your creative career to the next level by upgrading to
+          Behance Pro.</p>
+      </div>
+
+      <div class="pricing-section mt-4">
+        <div class="shadow bg-white text-dark pricing-card p-4">
+          <h3 class="fw-bold text-start mt-2">Behance</h3>
+          <p>Foundational tools to showcase your work and find creative opportunities.</p>
+          <h4 class="mt-5 fs-1">Free</h4>
+          <ul class="no-dots">
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Publish project to showcase your work</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Discover and save inspiration</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Offer freelance services</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Send client proposals</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Sell assets</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Message others and connect with the community</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Access to our full-time job board</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Transact on Behance with 15-30% platform fees</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> See basic stats on your projects</li>
+          </ul>
+        </div>
+
+
+        <div class="shadow bg-white text-dark pricing-card p-4" style="border: 1px solid blue;">
+          <h4 class="fw-bold text-start mt-2">Behance <span class="badge bg-primary text-white">PRO</span></h4>
+          <p class="mt-4">High performance tools designed to help you stand out and earn more.</p>
+          <h4 class="fw-bold"><span>US$</span>10.74 <span>/mo</span></h4>
+          <ul class="no-dots">
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Publish projects to showcase your work</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Discover and save inspiration</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Offer freelance services</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Send client proposals</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Sell assets</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Message others and connect with the community</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Access to our full-time job board</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> 0% platform fees on all transactions</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Advanced analytics on your profile and projects</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> See your top traffic sources and search terms</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Mark yourself as being available for work</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Exclusive recommended freelance job</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Promote your work to targeted audiences (Boost)</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Password protected projects and link-only projects</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Automatic project scheduling</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Search by image</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Profile personalization options including dark theme,
+              customizable button, and sections</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Pricing guidance for freelance work</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Subscription to Adobe Portfolio (includes up to 5
+              websites)</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Pro badge</li>
+            <li><img src="./icons/mdi--check-thick.svg" alt=""> Understand your followers' interests</li>
+          </ul>
+          <button class="btn btn-primary rounded-pill fw-bold text-white mt-4">
+            Start your 7-day free trial
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mt-5">
+    <img src="./images/hr2.jpg" alt="" style="width: 100%;" img-fluid>
+  </div>
+
+  <div class=" text-center mb-4">
+    <span><b>Upgrade to Behance Pro today:</b> Get advanced analytics, a custom portfolio website, and more features to
+      grow your creative career.</span>
+    <button class="text-primary fw-bold border border-0 bg-white">Start your 7-day free trial</button>
+  </div>
+
+  
+  <article class="bg-dark text-light">
+    <div class=" d-flex p-5 justify-content-between foots">
+      <div>
+        <img src="./images/behanceee.png" alt="" width="150px">
+      </div>
+      <div>
+        <p class="fw-bold text-center">Build For Creatives </p>
+        <ul class="foot" style="line-height: 40px;">
+          <div><a href="" class="text-light  fw-medium">Try Behance Pro</a></div>
+          <div><a href="" class="text-light fw-medium">Find Inspiration</a></div>
+          <div><a href="" class="text-light fw-medium">Get Hired</a></div>
+          <div><a href="" class="text-light fw-medium">Sell Creative Assets</a></div>
+          <div><a href="" class="text-light fw-medium">Sell Freelance Services</a></div>
+        </ul>
+      </div>
+      <div>
+        <p class="fw-bold text-center">Find Talent</p>
+        <ul class="foot" style="line-height: 40px;">
+          <div><a href="" class="text-light fw-medium">Post a job</a></div>
+          <div><a href="" class="text-light fw-medium">Graphic Designers</a></div>
+          <div><a href="" class="text-light fw-medium">Photographers</a></div>
+          <div><a href="" class="text-light fw-medium">Video Editors</a></div>
+          <div><a href="" class="text-light fw-medium">Web Designers</a></div>
+          <div><a href="" class="text-light fw-medium">Illustrators</a></div>
+        </ul>
+      </div>
+      <div>
+        <p class="fw-bold text-center">Behance</p>
+        <ul class="foot" style="line-height: 40px;">
+          <div><a href="" class="text-light fw-medium">About Behance</a></div>
+          <div><a href="" class="text-light fw-medium">Adobe Portfolio</a></div>
+          <div><a href="" class="text-light fw-medium">Download The App</a></div>
+          <div><a href="" class="text-light fw-medium">Blog</a></div>
+          <div><a href="" class="text-light fw-medium">Careers</a></div>
+          <div><a href="" class="text-light fw-medium">Help Center</a></div>
+          <div><a href="" class="text-light fw-medium">Contact Us</a></div>
+          <div><a href="" class="text-light fw-medium">Login</a></div>
+        </ul>
+      </div>
+      <div>
+        <p class="fw-bold text-center">Social</p>
+        <ul class="foot" style="line-height: 40px;">
+          <div><a href="" class="text-light fw-medium d-flex gap-2">
+              <p><i class="fa-brands fa-instagram"></i></p>Instagram
+            </a></div>
+          <div><a href="" class="text-light fw-medium d-flex gap-2">
+              <p><i class="fa-brands fa-square-twitter"></i></p>Twitter
+            </a></div>
+          <div><a href="" class="text-light fw-medium d-flex gap-2">
+              <p><i class="fa-brands fa-pinterest"></i></p>Pinterest
+            </a></div>
+          <div><a href="" class="text-light fw-medium d-flex gap-2">
+              <p><i class="fa-brands fa-facebook"></i></p>Facebook
+            </a></div>
+          <div><a href="" class="text-light fw-medium d-flex gap-2">
+              <p><i class="fa-brands fa-linkedin"></i></p>LinKedln
+            </a></div>
+        </ul>
+      </div>
+    </div>
+        <hr class="container Long">
+    <section class="d-flex justify-content-between container py-3 footer">
+      <div>
+        <img src="./images/adobe logo.webp" alt="" width="60px">
+      </div>
+
+      <div>
+        <small >© 2025 Adobe Inc. All rights reserved.</small>
+      </div>
+      <div>
+        <select class="customSelect" name="" id="" required>
+    a      <option value="" class="fw-semibold">English</option>
+          <option value="" class="fw-semibold">Cestina</option>
+          <option value="" class="fw-semibold">Dansk</option>
+          <option value="" class="fw-semibold">Deutsch</option>
+          <option value="" class="fw-semibold">Espanol</option>
+          <option value="" class="fw-semibold">Francais</option>
+          <option value="" class="fw-semibold">Italiana</option>
+          <option value="" class="fw-semibold">Nederlands</option>
+          <option value="" class="fw-semibold">Norsk</option>
+          <option value="" class="fw-semibold">Poiski</option>
+          <option value="" class="fw-semibold">Portugues</option>
+          <option value="" class="fw-semibold">Pyccknn</option>
+          <option value="" class="fw-semibold">suomi</option>
+          <option value="" class="fw-semibold">Svenska</option>
+          <option value="" class="fw-semibold">Turkco</option>
+        </select>
+      </div>
+      <div class="">
+        <ul class="d-flex gap-3 last">
+          <div><a href="" class="text-light fw-medium">TOU</a></div>
+          <div><a href="" class="text-light fw-medium">Privacy</a></div>
+          <div><a href="" class="text-light fw-medium">Community</a></div>
+          <div><a href="" class="text-light fw-medium">Cookie preferences</a></div>
+        </ul>
+      </div>
+      <div>
+        <small class="hover">Do not sell or share personal information</small>
+      </div>
+    </section>
+  </article>
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

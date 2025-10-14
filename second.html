@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="second.css">
+</head>
+
+<body>
+
+
+    <!-- nav1 -->
+
+    <nav class="d-flex align-items-center ms-5">
+        <div class="left d-flex gap-5 fw-semibold fs-5">
+            <img src="img/behance imgs/download (24).svg" alt="" width="100px" class="mb-3">
+            <p>Explore</p>
+            <p>Jobs</p>
+            <ul class="nav-item dropdown">
+                <div class="d-flex align-items-center gap-1">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Overview</a></li>
+                        <li><a class="dropdown-item" href="#">Career Guide</a></li>
+                        <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
+                        <li><a class="dropdown-item" href="#">Creative Apprenticeship</a></li>
+
+                    </ul>
+                </div>
+            </ul>
+            <ul class="nav-item dropdown">
+                <div class="d-flex align-items-center gap-1">
+                    <a class="nav-link" href="second.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hire
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                    </svg>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <!-- nav right -->
+        <div class="right d-flex ms-auto gap-4 me-5 mt-2">
+            <a href=""><button class="start border rounded-5 text-white fw-bold" style="width: 170px; height: 40px;">Start Free
+                Trial</button></a>
+            <button class="sign rounded-5 border fw-bold text-primary" style="width: 100px; height: 40px;">Sign
+                in</button>
+            <img src="img/behance imgs/download (5).svg" alt="" width="80px">
+        </div>
+    </nav>
+    <hr class="mt-1">
+
+    <!-- nav2 -->
+
+    <nav class="d-flex justify-content-center gap-5 mt-1">
+        <div class="d-flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-clipboard-data mt-1" viewBox="0 0 16 16">
+                <path
+                    d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0z" />
+                <path
+                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                <path
+                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+            </svg>
+            <p class="fw-bold">Hiring Dashbord</p>
+        </div>
+        <div class="d-flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mt-1"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+            <p class="fw-bold">Freelancers</p>
+        </div>
+        <div class="d-flex gap-2 justify-content-center align-items-center border rounded-5"
+            style="background-color: #f5f8ff; width: 190px; height: 40px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-exclamation-circle mt-1" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path
+                    d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+            </svg>
+            <p class="fw-bold pt-3" style="color: #005fff;">Hiring on Behance</p>
+        </div>
+        <div class="d-flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-plus-circle mt-1" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+            </svg>
+            <p class="fw-bold ">Create Job</p>
+        </div>
+    </nav>
+    </nav>
+    <hr class="mt-1">
+    <div class="mt-5">
+        <p class="fw-bold text-center" style="font-size: 80px; line-height: 70px;">Hire The World’s Best <br>
+            Freelancers on Behance</p>
+    </div>
+    <p class="text-center fs-5 mt-5">Skip the search. Get instant AI-powered matches. <u> Adobe Generative AI Terms
+        </u></p>
+    <div class="d-flex text-center align-items-center rounded-5"
+        style="width: 820px; height: 50px; background-color: white;  margin-left: 470px; padding-top: 20px; border: 1px solid #e0eaff">
+        <p class="look ms-3" style="color: #5790ff;"> <span class="look " style="color: #0057ff;">I'm looking for
+            </span> an
+            Illustrator for my pet food company, budget of $800</p>
+
+        <div class="chevron ms-auto me-4 d-flex align-items-center mb-3" style="width: 40px; height: 40px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-chevron-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </div>
+    </div>
+
+    <p class="d-flex justify-content-center mt-5">By using Behance, you are agreeing to the Adobe <u class="ms-1 me-1">
+            Terms of Use </u> and <u class="ms-1">Privacy Policy</u></p>
+
+    <!-- images cards -->
+    <div class="" style="background: linear-gradient(180deg, white, #e2e7f2);">
+        <div class="d-flex justify-content-center gap-4 mt-4">
+            <div class="cover1 position-relative">
+                <div class="position-absolute fs-5 fw-bold text-white" style="margin-left: 25%; margin-top: 25%;">
+                    Graphic Design</div>
+                <div class="shift1 ms-3 pt-2">
+                    <div class="position-absolute" style="margin-left: 90px; margin-top: 110px;"><img
+                            src="img/behance img 3/img 221.webp" alt="" width="30px" height="30px"
+                            class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 110px; margin-top: 110px;"><img
+                            src="img/img 224.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 130px; margin-top: 110px;"><img
+                            src="img/img 227.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                </div>
+                <div class="img1"></div>
+            </div>
+            <div class="cover1 position-relative">
+                <div class="position-absolute fs-5 fw-bold text-white" style="margin-left: 25%; margin-top: 25%;">
+                    Logo
+                    Design</div>
+                <div class="shift1 ms-3 pt-2">
+                    <div class="position-absolute" style="margin-left: 90px; margin-top: 110px;"><img
+                            src="img/behance img 3/img 227.webp" alt="" width="30px" height="30px"
+                            class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 110px; margin-top: 110px;"><img
+                            src="img/img 224.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 130px; margin-top: 110px;"><img
+                            src="img/img 222.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                </div>
+                <div class="img2"></div>
+            </div>
+            <div class="cover1 position-relative">
+                <div class="position-absolute fs-5 fw-bold text-white" style="margin-left: 25%; margin-top: 25%;">
+                    Branding Services</div>
+                <div class="shift1 ms-3 pt-2">
+                    <div class="position-absolute" style="margin-left: 90px; margin-top: 110px;"><img
+                            src="img/behance img 3/img 225.webp" alt="" width="30px" height="30px"
+                            class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 110px; margin-top: 110px;"><img
+                            src="img/img 226.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 130px; margin-top: 110px;"><img
+                            src="img/img 222.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                </div>
+                <div class="img3"></div>
+            </div>
+            <div class="cover1 position-relative">
+                <div class="position-absolute fs-5 fw-bold text-white" style="margin-left: 25%; margin-top: 25%;">
+                    Website Design</div>
+                <div class="shift1 ms-3 pt-2">
+                    <div class="position-absolute" style="margin-left: 90px; margin-top: 110px;"><img
+                            src="img/behance img 3/img 221.webp" alt="" width="30px" height="30px"
+                            class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 110px; margin-top: 110px;"><img
+                            src="img/img 228.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 130px; margin-top: 110px;"><img
+                            src="img/img 225.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                </div>
+                <div class="img4"></div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-4 mt-4">
+            <div class="cover1 position-relative">
+                <div class="position-absolute fs-5 fw-bold text-white" style="margin-left: 25%; margin-top: 25%;">
+                    Social
+                    Media Design</div>
+                <div class="shift1 ms-3 pt-2">
+                    <div class="position-absolute" style="margin-left: 90px; margin-top: 110px;"><img
+                            src="img/behance img 3/img 227.webp" alt="" width="30px" height="30px"
+                            class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 110px; margin-top: 110px;"><img
+                            src="img/img 223.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 130px; margin-top: 110px;"><img
+                            src="img/img 228.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                </div>
+                <div class="img5"></div>
+            </div>
+            <div class="cover1 position-relative">
+                <div class="position-absolute fs-5 fw-bold text-white" style="margin-left: 25%; margin-top: 25%;">
+                    Illustrations</div>
+                <div class="shift1 ms-3 pt-2">
+                    <div class="position-absolute" style="margin-left: 90px; margin-top: 110px;"><img
+                            src="img/behance img 3/img 227.webp" alt="" width="30px" height="30px"
+                            class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 110px; margin-top: 110px;"><img
+                            src="img/img 228.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 130px; margin-top: 110px;"><img
+                            src="img/img 226.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                </div>
+                <div class="img6"></div>
+            </div>
+            <div class="cover1 position-relative">
+                <div class="position-absolute fs-5 fw-bold text-white" style="margin-left: 25%; margin-top: 25%;">
+                    Architecture & Interior Design</div>
+                <div class="shift1 ms-3 pt-4">
+                    <div class="position-absolute" style="margin-left: 90px; margin-top: 110px;"><img
+                            src="img/behance img 3/img 222.webp" alt="" width="30px" height="30px"
+                            class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 110px; margin-top: 110px;"><img
+                            src="img/img 223.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 130px; margin-top: 110px;"><img
+                            src="img/img 224.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                </div>
+                <div class="img7"></div>
+            </div>
+            <div class="cover1 position-relative">
+                <div class="position-absolute fs-5 fw-bold text-white" style="margin-left: 25%; margin-top: 25%;">
+                    UI/UX
+                    Design</div>
+                <div class="shift1 ms-3 pt-2">
+                    <div class="position-absolute" style="margin-left: 90px; margin-top: 110px;"><img
+                            src="img/behance img 3/img 224.webp" alt="" width="30px" height="30px"
+                            class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 110px; margin-top: 110px;"><img
+                            src="img/img 228.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                    <div class="position-absolute" style="margin-left: 130px; margin-top: 110px;"><img
+                            src="img/img 221.webp" alt="" width="30px" height="30px" class="border rounded-5"></div>
+
+                </div>
+                <div class="img8"></div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center bg-white mt-5 align-items-center border rounded-5 fw-bold"
+            style="width: 250px; height: 40px; margin-left: 45%;">Browse All Categories</div>
+
+        <hr class="d-flex mt-5" style="width: 80%; margin-left: 12%;">
+
+        <div class="d-flex" style="width: 100%; height: 700px;">
+
+            <div class="sec-three-left" style="margin-left: 160px;">
+                <p class="" style="font-size: 60px; font-weight: 700;">Why hire on Behance?</p>
+                <p class="fs-5" style="font-weight: 400;">Hiring freelance talent on Behance is seamless and secure.
+                </p>
+
+                <div class="d-flex mt-5 gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="blue" class="bi bi-stars"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                    </svg>
+                    <p><span class="fw-semibold" style="font-size: 20px;">Access to the world’s best creators</span>
+                        <br>Get matched from a pool of over 2 million qualified freelancers
+                    </p>
+                </div>
+
+
+                <div class="d-flex gap-2 mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="blue"
+                        class="bi bi-plus-square-dotted" viewBox="0 0 16 16">
+                        <path
+                            d="M2.5 0q-.25 0-.487.048l.194.98A1.5 1.5 0 0 1 2.5 1h.458V0zm2.292 0h-.917v1h.917zm1.833 0h-.917v1h.917zm1.833 0h-.916v1h.916zm1.834 0h-.917v1h.917zm1.833 0h-.917v1h.917zM13.5 0h-.458v1h.458q.151 0 .293.029l.194-.981A2.5 2.5 0 0 0 13.5 0m2.079 1.11a2.5 2.5 0 0 0-.69-.689l-.556.831q.248.167.415.415l.83-.556zM1.11.421a2.5 2.5 0 0 0-.689.69l.831.556c.11-.164.251-.305.415-.415zM16 2.5q0-.25-.048-.487l-.98.194q.027.141.028.293v.458h1zM.048 2.013A2.5 2.5 0 0 0 0 2.5v.458h1V2.5q0-.151.029-.293zM0 3.875v.917h1v-.917zm16 .917v-.917h-1v.917zM0 5.708v.917h1v-.917zm16 .917v-.917h-1v.917zM0 7.542v.916h1v-.916zm15 .916h1v-.916h-1zM0 9.375v.917h1v-.917zm16 .917v-.917h-1v.917zm-16 .916v.917h1v-.917zm16 .917v-.917h-1v.917zm-16 .917v.458q0 .25.048.487l.98-.194A1.5 1.5 0 0 1 1 13.5v-.458zm16 .458v-.458h-1v.458q0 .151-.029.293l.981.194Q16 13.75 16 13.5M.421 14.89c.183.272.417.506.69.689l.556-.831a1.5 1.5 0 0 1-.415-.415zm14.469.689c.272-.183.506-.417.689-.69l-.831-.556c-.11.164-.251.305-.415.415l.556.83zm-12.877.373Q2.25 16 2.5 16h.458v-1H2.5q-.151 0-.293-.029zM13.5 16q.25 0 .487-.048l-.194-.98A1.5 1.5 0 0 1 13.5 15h-.458v1zm-9.625 0h.917v-1h-.917zm1.833 0h.917v-1h-.917zm1.834-1v1h.916v-1zm1.833 1h.917v-1h-.917zm1.833 0h.917v-1h-.917zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                    </svg>
+                    <p><span class="fw-semibold" style="font-size: 20px;">All the right tools in one place</span>
+                        <br>Start conversations, share files, and join video calls with candidates
+                    </p>
+                </div>
+
+
+                <div class="d-flex gap-2 mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="blue"
+                        class="bi bi-credit-card mt-1" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <p><span class="fw-semibold" style="font-size: 20px;">Secure payments</span>
+                        <br>Pay seamlessly and securely with a debit or credit card on Behance
+                    </p>
+                </div>
+
+                <div class="d-flex mt-4 gap-2">
+                    <button class="border rounded-3 d-flex align-items-center text-white mt-3"
+                        style="height: 20px; background: linear-gradient(90deg, #005cfe, #0027c2);">pro</button>
+
+                    <p> <span class="fw-semibold" style="font-size: 20px;">No platform fee with Behance Pro</span>
+                        <br> Platform fees are waived for freelancers with Behance Pro
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="sec-three-right ms-auto" style="margin-right: 200px; margin-top: 50px;">
+                <img src="img/circle img.webp" alt="" width="480px">
+            </div>
+        </div>
+        <div class="" style="margin-top: -150px; margin-left: 300px;">
+            <button class="fw-bold border rounded-5 text-white bg-primary" style="height: 50px; width: 150px;">Get
+                Started</button>
+            <button class="fw-bold border rounded-5 text-black bg-white" style="height: 50px; width: 200px;">Browse
+                Freelancers</button>
+        </div>
+    </div>
+    <div class=""
+        style="background: linear-gradient(180deg, #e2e7f2, white); width: 100%; height: 700px; padding-left: 100px;">
+        <p class="text-primary fs-4 fw-bold" style="padding-top: 250px;">Our Freelancers</p>
+        <p class="" style="font-size: 70px; font-weight: 700; line-height: 90px;">Hire top freelancers hand-selected
+            <br>by the Behance team.
+        </p>
+
+
+        <div class="d-flex">
+            <div class="fw-bold d-flex gap-4">
+                <p>All</p>
+                <p>Logo Designers</p>
+                <p>Brand Designers</p>
+                <p>Illustrators</p>
+                <p>UI/UX Designers</p>
+            </div>
+            <div class="d-flex ms-auto gap-4" style="margin-right: 150px;">
+                <div class="border d-flex align-items-center justify-content-center rounded-pill"
+                    style="width: 35px; height: 35px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    </svg>
+                </div>
+
+                <div class="border d-flex align-items-center justify-content-center rounded-pill"
+                    style="width: 35px; height: 35px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- cards -->
+        <div class="d-flex gap-3" style="margin-left: 100px; margin-top: 20px;">
+
+            <!-- card1 -->
+            <div class="cards1 border" style="width: 350px; height: 300px;">
+                <div class="d-flex gap-2 ms-3" style="width: 320px; height: 70px;">
+                    <img src="img/img 225.webp" alt="" width="110px">
+                    <img src="img/img 221.webp" alt="" width="110px">
+                    <img src="img/img 223.webp" alt="" width="100px">
+                </div>
+                <div class="" style="margin-left: 150px; margin-top: -20px;">
+                    <img src="img/main card1.jpg" alt="" width="70px" class="border rounded-pill">
+                </div>
+                <p class="fw-semibold fs-5" style="margin-left: 130px; margin-top: 20px;">Opedia Studio</p>
+                <div class="d-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill mt-1" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                    <p>Bangladesh </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-dot mt-1" viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                    </svg>
+                    <p>Respond quickly</p>
+                </div>
+                <div class="d-flex">
+                    <button class="bg-white border rounded-3 fw-semibold text-primary" style="margin-left: 90px;">271
+                        Projects completed</button>
+
+                </div>
+                <button class="fw-semibold bg-white border text-black mt-3 rounded-5"
+                    style="width: 250px; margin-left: 50px; height: 40px;">Hire Opedia</button>
+            </div>
+
+
+            <!-- card2 -->
+            <div class="cards2 border" style="width: 350px; height: 300px;">
+                <div class="d-flex gap-2 ms-3" style="width: 320px; height: 70px;">
+                    <img src="img/card img 3.png" alt="" width="110px">
+                    <img src="img/card img 1.png" alt="" width="110px">
+                    <img src="img/card img 2.png" alt="" width="100px">
+                </div>
+                <div class="" style="margin-left: 150px; margin-top: -20px;">
+                    <img src="img/main card 2.jpg" alt="" width="70px" class="border rounded-pill">
+                </div>
+                <p class="fw-semibold fs-5" style="margin-left: 130px; margin-top: 20px;">Numan Qadir</p>
+                <div class="d-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill mt-1" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                    <p>United kingdom</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-dot mt-1" viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                    </svg>
+                    <p>Respond quickly</p>
+                </div>
+                <div class="d-flex">
+                    <button class="bg-white border rounded-3 fw-semibold text-primary" style="margin-left: 90px;">105
+                        Projects completed</button>
+
+                </div>
+                <button class="fw-semibold bg-white border text-black mt-3 rounded-5"
+                    style="width: 250px; margin-left: 50px; height: 40px;">Hire Numan</button>
+            </div>
+
+            <!-- card3 -->
+            <div class="cards3 border" style="width: 350px; height: 300px;">
+                <div class="d-flex gap-2 ms-3" style="width: 320px; height: 70px;">
+                    <img src="img/card img 5.jpg" alt="" width="110px">
+                    <img src="img/card img 1.png" alt="" width="110px">
+                    <img src="img/card img 4.jpg" alt="" width="100px">
+                </div>
+                <div class="" style="margin-left: 150px; margin-top: -20px;">
+                    <img src="img/main card 3.png" alt="" width="70px" class="border rounded-pill">
+                </div>
+                <p class="fw-semibold fs-5" style="margin-left: 130px; margin-top: 20px;">Studio Moara</p>
+                <div class="d-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill mt-1" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                    <p>Indonesia</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-dot mt-1" viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                    </svg>
+                    <p>Respond quickly</p>
+                </div>
+                <div class="d-flex">
+                    <button class="bg-white border rounded-3 fw-semibold text-primary" style="margin-left: 90px;">99
+                        Projects completed</button>
+
+                </div>
+                <button class="fw-semibold bg-white border text-black mt-3 rounded-5"
+                    style="width: 250px; margin-left: 50px; height: 40px;">Hire Studio</button>
+            </div>
+
+            <!-- card4 -->
+            <div class="cards4 border" style="width: 350px; height: 300px;">
+                <div class="d-flex gap-2 ms-3" style="width: 320px; height: 70px;">
+                    <img src="img/img 228.webp" alt="" width="110px">
+                    <img src="img/img 224.webp" alt="" width="110px">
+                    <img src="img/img 222.webp" alt="" width="100px">
+                </div>
+                <div class="" style="margin-left: 150px; margin-top: -20px;">
+                    <img src="img/main card 4.png" alt="" width="70px" class="border rounded-pill">
+                </div>
+                <p class="fw-semibold fs-5" style="margin-left: 60px; margin-top: 20px;">Laurentui Gabriel Dumitru</p>
+                <div class="d-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill mt-1" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                    <p>Romania</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-dot mt-1" viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                    </svg>
+                    <p>Respond quickly</p>
+                </div>
+                <div class="d-flex">
+                    <button class="bg-white border rounded-3 fw-semibold text-primary" style="margin-left: 90px;">97
+                        Projects completed</button>
+
+                </div>
+                <button class="fw-semibold bg-white border text-black mt-3 rounded-5"
+                    style="width: 250px; margin-left: 50px; height: 40px;">Hire Laurentui Gabriel</button>
+            </div>
+
+
+        </div>
+
+        <div class="" style="margin-top: 40px; margin-left: 600px;">
+            <button class="fw-bold border rounded-5 text-white bg-primary" style="height: 50px; width: 150px;">Get
+                Started</button>
+            <button class="fw-bold border rounded-5 text-black bg-white" style="height: 50px; width: 200px;">Browse
+                Freelancers</button>
+        </div>
+    </div>
+
+    <div class=""
+        style="background: linear-gradient(180deg, #e2e7f2, white); width: 100%; height: 800px; margin-top: 400px;">
+        <p class="fs-4 text-primary d-flex justify-content-center pt-5">How it works</p>
+        <p class="d-flex text-black justify-content-center text-center fw-bold"
+            style="font-size: 60px; line-height: 60px;">Hiring on Behance
+            <br>is easy & secure.
+        </p>
+
+        <div class="d-flex gap-3 justify-content-center mt-5">
+            <div class="border border-primary border-2 rounded-3 bg-white" style="width: 450px; height: 200px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="blue"
+                    class="bi bi-menu-button-fill mt-4" style="margin-left: 200px;" viewBox="0 0 16 16">
+                    <path
+                        d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h8A1.5 1.5 0 0 0 11 3.5v-2A1.5 1.5 0 0 0 9.5 0zm5.927 2.427A.25.25 0 0 1 7.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <p class="fw-bold text-primary ms-3 mt-3" style="font-size: 15px;">1. Review recommendations</p>
+                <p class="fw-semibold ms-3">Share your requirements with recommended <br> freelancers, abd review thier
+                    proposals.</p>
+            </div>
+
+
+            <div class="border rounded-3 bg-white" style="width: 450px; height: 200px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="blue"
+                    class="bi bi-person-vcard mt-4" style="margin-left: 200px;" viewBox="0 0 16 16">
+                    <path
+                        d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                    <path
+                        d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+                </svg>
+                <p class="fw-bold ms-3 mt-3" style="font-size: 15px;">2. Hire & Collaborate</p>
+                <p class="fw-semibold ms-3">Start, conversations, share files, and join <br> video calls to discuss
+                    project details.</p>
+            </div>
+
+
+            <div class="border  rounded-3 bg-white" style="width: 450px; height: 200px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30 " fill="blue" class="bi bi-postcard mt-4"
+                    style="margin-left: 200px;" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0zM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5M10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM13 8h-2V6h2z" />
+                </svg>
+
+                <p class="fw-bold ms-3 mt-3" style="font-size: 15px;">3. Pay securely on platform</p>
+                <p class="fw-semibold ms-3">Pay seamlessly with a debit or credit card on Behance.</p>
+            </div>
+        </div>
+
+        <div class="big-background"></div>
+        <div class="" style="margin-top: 80px; margin-left: 700px;">
+            <button class="fw-bold border rounded-5 text-white bg-primary" style="height: 50px; width: 150px;">Get
+                Started</button>
+        </div>
+        <hr class="" style="margin-top: 200px; width: 70%; margin-left: 200px;">
+
+        <div class="" style="width: 100%; height: 700px;">
+
+            <div class="" style="line-height: 50px; margin-top: 100px; margin-left: 200px;">
+                <p class="fw-bold text-primary" style="font-size: 20px;">Success Stories</p>
+                <p class="fw-bold" style="font-size: 60px;">See what clients are saying.</p>
+                <p class="fs-5">Learn firsthand why 98% of clients recommend their Behance freelancer.</p>
+
+            </div>
+
+
+
+        </div>
+        <div class="d-flex gap-4" style="margin-top: -450px;margin-left: 150px;">
+
+            <div class="border border-primary rounded-4" style="height: 350px; width: 450px;">
+                <p class="fs-5 fw-semibold d-flex justify-content-center mt-4">Absolutely great Designer to work <br>
+                    with. Prompt response, professional <br> approach and beautiful designs. A <br>
+                    DELIGHT TO WORK WITH!</p>
+
+                <div class="d-flex gap-2" style="margin-top: 130px; margin-left: 50px;">
+                    <img src="img/img 221.webp" alt="" width="40px" class="border rounded-pill">
+                    <p class="fw-bold pt-2">Nadia Fernandez</p>
+                </div>
+            </div>
+
+
+            <div class="border  border-primary rounded-4" style="height: 350px; width: 450px;">
+                <p class="fs-5 fw-semibold d-flex justify-content-center mt-4">Amazing work as usual! This is my <br>
+                    second time working with Enrico <br> and it won’t be the last. He
+                    created <br> some awesome design assets for a <br> project that helped me elevate the <br> overall
+                    brand identity
+                    in a <br> professional and timely manor.</p>
+
+                <div class="d-flex gap-2" style="margin-top: 40px; margin-left: 50px;">
+                    <img src="img/img 226.webp" alt="" width="40px" class="border rounded-pill">
+                    <p class="fw-bold pt-2">Ulysses Design Co</p>
+                </div>
+            </div>
+
+
+            <div class="border  border-primary rounded-4" style="height: 350px; width: 450px;">
+                <p class="fs-5 fw-semibold d-flex justify-content-center mt-4">I had a fantastic experience working <br>
+                    with Lindsey. Her professionalism, <br> expertise, and communication skills <br> made the project
+                    smooth and <br> successful. Highly recommended!</p>
+
+                <div class="d-flex gap-2" style="margin-top: 90px; margin-left: 50px;">
+                    <img src="img/img 226.webp" alt="" width="40px" class="border rounded-pill">
+                    <p class="fw-bold pt-2">Kira Koroknai</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="" style="margin-top: 40px; margin-left: 600px;">
+            <button class="fw-bold border rounded-5 text-white bg-primary" style="height: 50px; width: 150px;">Get
+                Started</button>
+            <button class="fw-bold border rounded-5 text-black bg-white" style="height: 50px; width: 200px;">Browse
+                Freelancers</button>
+        </div>
+
+        <div class="mt-4" style="background: linear-gradient(180deg, #e2e7f2, white); width: 100%; height: 800px;">
+            <button class="border rounded-4 bg-white"
+                style="width: 70%; height: 600px; margin-top: 70px; margin-left: 17%;">
+                <p class="text-center"
+                    style="margin-top: -100px; font-size: 60px; font-weight: bold; line-height: 60px;">Hiring on behalf
+                    <br> of your company?
+                </p>
+                <p class="text-center fs-5 mt-3">We’ll help you find the perfect freelancer with hand-picked <br>
+                    recommendations.</p>
+
+                <div class="fw-bold border rounded-5 text-white bg-primary d-flex align-items-center justify-content-center"
+                    style="height: 50px; width: 150px; margin-top: 180px; margin-left: 45%;">Contact Us
+            </button>
+        </div>
+    </div>
+
+    <div class="large-bg-img">
+        <p class="text-white d-flex justify-content-center fs-4 fw-semibold" style="padding-top: 200px;">Hire
+            confidently</p>
+        <p class="text-white text-center fw-bold" style="font-size: 70px; line-height: 60px;">Tap into the world’s
+            <br>largest creative community.
+        </p>
+
+        <div class="d-flex justify-content-center mt-5 gap-5">
+            <div class="size1 rounded-4" style="width: 400px; height: 200px;background-color: rgb(86, 80, 80, 0.6);">
+                <p class="text-white text-center mt-4 fw-bold" style="font-size: 30px;">50M+</p>
+                <p class="text-center text-white fw-semibold">Over 50 million members in the Behance <br> community</p>
+            </div>
+
+
+            <div class="size2 rounded-4" style="width: 400px; height: 200px; background-color: rgb(86, 80, 80, 0.6)">
+                <p class="text-white text-center mt-4 fw-bold" style="font-size: 30px;">Billions</p>
+                <p class="text-center text-white  fw-semibold">Creative work gets seen billions of times <br> every year
+                    on Behance</p>
+            </div>
+            <div class="size3 rounded-4" style="width: 400px; height: 200px; background-color: rgb(86, 80, 80, 0.6)">
+                <p class="text-white text-center mt-4 fw-bold" style="font-size: 30px;">2006</p>
+                <p class="text-center text-white fw-semibold">Founded in 2006, Behance has been a <br> trusted network
+                    for over 15 years</p>
+            </div>
+        </div>
+
+        <div class="" style="margin-top: 40px; margin-left: 600px;">
+            <button class="fw-bold border rounded-5 text-black bg-white" style="height: 50px; width: 150px;">Get
+                Started</button>
+            <button class="fw-bold border rounded-5 text-white"
+                style="height: 50px; width: 200px; background-color: inherit;">Browse
+                Freelancers</button>
+        </div>
+    </div>
+
+    <div class="large-black d-flex" style="width: 100%; height: 750px; background-color: #191919;">
+
+
+        <div>
+            <p class="text-white fw-bold fs-4" style="line-height: 30px; margin-left: 60px; padding-top: 10px;">Browse
+                more designers <br> available for hire</p>
+            <p class="text-white fw-semibold"
+                style="line-height: 35px; margin-left: 60px; margin-top: 30px; font-size: 20px;">Graphic Designers
+                <br>Brand Designers
+                <br>UI/UX Designers
+                <br>Illustrators
+                <br>Logo Designers
+                <br>Interaction Designers
+                <br>Art Directors
+                <br>Photographers
+                <br>Web Designers
+                <br>Industrial Designers
+                <br>Architectural Designers
+                <br> Motion Graphic Designers
+                <br>Fashion Artists
+                <br>3D Artists
+                <br> Comic Artists
+
+            </p>
+        </div>
+
+
+        <div>
+            <p class="text-white fw-bold fs-4" style="line-height: 30px; margin-left: 60px; padding-top: 10px;">Browse
+                top creative services</p>
+            <p class="text-white fw-semibold"
+                style="line-height: 35px; margin-left: 60px; margin-top: 30px; font-size: 20px;">Logo Design
+                <br>Branding Services
+                <br>Social Media Design
+                <br>Website Design
+                <br>Illustrations
+                <br>Packaging Design
+                <br>Landing Page Design
+                <br>UI/UX Design
+                <br>Architecture & Interior Design
+                <br>Comics & Character Design
+                <br>Graphics for Streamers
+                <br>Animation Design
+                <br>Sound Design
+                <br>Invitation Design
+
+            </p>
+        </div>
+
+
+        <div>
+            <p class="text-white fw-bold fs-4" style="line-height: 30px; margin-left: 60px; padding-top: 10px;">Hiring
+                Freelancers on Behance
+            </p>
+            <div class="" style="line-height: 10px;">
+                <p class="text-white fw-semibold"
+                    style="line-height: 35px; margin-left: 60px; margin-top: 30px; font-size: 20px;"> How to Hire
+                    Freelance Artists on <br> Behance</p>
+                <br>
+                <p class="text-white fw-semibold"
+                    style="line-height: 35px; margin-left: 60px; margin-top: 30px; font-size: 20px;">New Way To Hire
+                    Freelancers on <br> Behance: Book a Service</p>
+                <br>
+                <p class="text-white fw-semibold"
+                    style="line-height: 35px; margin-left: 60px; margin-top: 30px; font-size: 20px;">Hire Creative
+                    Talent for your Next <br> Freelance Project from Behance</p>
+                <br>
+                <p class="text-white fw-semibold"
+                    style="line-height: 35px; margin-left: 60px; margin-top: 30px; font-size: 20px;">Help Center:
+                    Hiring on Behance</p>
+            </div>
+        </div>
+
+        <div class="ms-auto me-5 mt-2 gap-3 d-flex flex-column">
+
+            <div class="rounded-5 border-white" style="width: 350px; height: 320px; background-color: #252525;">
+                <p class="text-center text-white mt-5 fs-4 fw-bold" style="line-height: 30px;">Looking for more <br>
+                    designers to hire? <br> Search all available full <br> time and freelance <br> designers now</p>
+                    <button class="mt-3 rounded-5 bg-white fw-semibold" style="margin-left: 90px; width: 200px; height: 40px;">Start searching now</button>
+            </div>
+
+            <div class="rounded-5 border-white" style="width: 350px; height: 320px; background-color: #252525;">
+                <p class="text-center text-white mt-5 fs-4 fw-bold" style="line-height: 30px;">Hiring? We’ll help you <br> find a freelancer: get <br> matched with hand- <br>picked <br> recommendations.</p>
+                    <button class="mt-3 rounded-5 bg-white fw-semibold" style="margin-left: 90px; width: 200px; height: 40px;">Contact us now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="">
+    <div class="" style="width: 100%; height: 5px; background: linear-gradient(90deg, red, blue, yellow, green);"></div>
+    <p class=" fs-5 d-flex justify-content-center"> <span class="fw-bold">Upgrade to Behance Pro today:</span> Get
+      advanced analytics, a custom portfolio website, and more features to grow your
+      creative career.
+      <a href="" class="fw-bold">Start your 7 day free trial</a>
+    </p>
+  </div>
+
+
+
+  <div class="position-relative" style="width: 100%; height: 700px; background-color: #191919;">
+    <div class="d-flex">
+      <div class="m-5">
+        <img src="img/behance img 3/behance in white text.png" alt="" width="200px">
+      </div>
+      <div class=" second text-white d-flex" style="margin-right: 170px; margin-top: 90px; gap: 80px;">
+        <div class="d-flex flex-column">
+          <p class="fs-5 fw-bold">Built For Creatives</p>
+          <div class="fw-semibold mt-4">
+            <p>Try Behance Pro</p>
+            <p>Find Inspiration</p>
+            <p>Get Hired</p>
+            <p>Sell Creative Assets</p>
+            <p>Sell Freelance Services</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column">
+          <p class="fs-5 fw-bold ">Find talent</p>
+          <div class="fw-semibold mt-4">
+            <p>Post a Job</p>
+            <p>Graphic Designers</p>
+            <p>Photographers</p>
+            <p>Video Editors</p>
+            <p>Web Designers</p>
+            <p>Illustrators</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column">
+          <p class="fs-5 fw-bold">Behance</p>
+          <div class="fw-semibold mt-4">
+            <p>About Behance</p>
+            <p>Adobe Portfolio</p>
+            <p>Download the App</p>
+            <p>Blog</p>
+            <p>Carrers</p>
+            <p>Help Center</p>
+            <p>Contact Us</p>
+            <p>Login</p>
+          </div>
+        </div>
+
+
+        <div class="d-flex flex-column">
+          <p class="fs-5 fw-bold">Social</p>
+          <div class="d-flex align-items-center gap-2">
+            <img src="img/behance img 3/insta logo black.png" alt="" width="20px" class="border rounded-pill mt-3">
+            <p class="fw-semibold mt-4">Instagram</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img src="img/behance img 3/black twiter logo.png" alt="" width="20px" class="border rounded-pill">
+            <p class="fw-semibold mt-2">Twitter</p>
+          </div>
+          <div class="d-flex align-items-center gap-2 ">
+            <img src="img/behance img 3/pintrest.png" alt="" width="20px" class="border rounded-pill">
+            <p class="fw-semibold mt-2">Pinterest</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img src="img/behance img 3/facebook black logo.png" alt="" width="20px" class="border rounded-pill">
+            <p class="fw-semibold mt-2">Facebook</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img src="img/behance img 3/linkedin logo.png" alt="" width="20px" height="20 px"
+              class="border rounded-pill">
+            <p class="fw-semibold mt-3">Linkedin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white mt-5 d-flex" style="width: 80%; height: 1px; margin-left: 140px;"></div>
+    <div class="d-flex">
+      <div class="" style="margin-left: 140px;">
+        <img src="img/behance img 3/adobe logo.png" alt="" width="100px" class="mt-5">
+      </div>
+      <div class="d-flex align-items-center" style="margin-top: 35px; margin-left: 40px;">
+        <img src="img/behance img 3/c.png" alt="" width="10px" height="10px">
+        <p class="text-white fw-bold  mt-3">2025 Adobe Inc. All rights reserved.</p>
+      </div>
+      <div class="bottom-right">
+        <div class="wait">
+          <div class="list bg-white position-absolute border rounded-3  flex-column justify-content-center fw-semibold"
+            style="width: 100px; height: 460px; margin-top: -450px; margin-left: 270px;">
+            <p class="mt-1 ms-2">English <br> Čeština
+              <br>Dansk <br>Deutsh <br>Español
+              <br>Français
+              <br>Italiano <br>Nederlands <br>Norsk <br>Polski
+              <br>Portugues <br>Русский
+              <br>Suomi <br>Svenska <br>Türkçe
+              <br>日本語<br>한국어<br>中文(简体) <br>中文(繁體)
+            </p>
+          </div>
+          <div class="English d-flex align-items-center fw-semibold" style="margin-left: 300px; margin-top: 30px;">
+            <p class="text-white mt-3">English</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-down "
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="d-flex text-white fw-semibold gap-3 fs-6" style="margin-left: 950px; margin-top: -45px;">
+      <p>TOU</p>
+      <p>Privacy</p>
+      <p>Community</p>
+      <p>Cookie preferances </p>
+      <p>Do not sell or share my personal information</p>
+    </div>
+  </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <!-- nav1 -->
+  <nav>
+    <nav class="d-flex align-items-center ms-5 position-">
+      <div class="left d-flex gap-5 fw-semibold fs-5">
+        <img src="img/behance imgs/download (24).svg" alt="" width="100px" class="mb-3">
+        <p>Explore</p>
+        <p>Jobs</p>
+        <ul class="nav-item dropdown">
+          <div class="d-flex align-items-center gap-1">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-chevron-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            </svg>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Overview</a></li>
+              <li><a class="dropdown-item" href="#">Career Guide</a></li>
+              <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
+              <li><a class="dropdown-item" href="#">Creative Apprenticeship</a></li>
+
+            </ul>
+          </div>
+        </ul>
+        <ul class="nav-item dropdown">
+          <div class="d-flex align-items-center gap-1">
+            <!-- <a class="nav-link " href="second.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hire
+            </a> -->
+            <a href="second.html"><p class="text-black">Hire</p></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-chevron-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            </svg>
+            <!-- <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul> -->
+          </div>
+        </ul>
+      </div>
+      <!-- nav right -->
+      <div class="right d-flex ms-auto gap-4 me-5 mt-2">
+        <a href="trial.html"><button class="start border rounded-5 text-white fw-bold" style="width: 170px; height: 40px;">Start Free
+          Trial</button></a>
+        <button class="sign rounded-5 border fw-bold text-primary" style="width: 100px; height: 40px;">Sign in</button>
+        <img src="img/behance imgs/download (5).svg" alt="" width="80px">
+      </div>
+    </nav>
+
+    <!-- nav2 -->
+    <nav class="d-flex  gap-3 px-4 py-3">
+      <div class="filter d-flex rounded-5 justify-content-center align-items-center ms-4"
+        style="width: 130px; height: 50px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+        </svg>
+        <p class="mt-3 fw-bold">Filter</p>
+      </div>
+
+      <div class=" search d-flex rounded-5 align-items-center"
+        style="width: 1300px; height: 50px; background-color: #f9f9f9;">
+        <div class="d-flex align-items-center ms-3 gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16" style="color: #7d7b74;">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg>
+          <p class="mt-3 fs-5 fw-bold" style="color: #7d7b74;">Search Behance....</p>
+        </div>
+        <div class="d-flex ms-auto align-items-center me-4">
+          <div class="d-flex mt-3 me-5 gap-3 fs-6 fw-bold">
+            <div class="bg-white d-flex align-items-center justify-content-center border rounded-5 mb-3"
+              style="width: 90px ;">
+              <p class="d-flex mt-1">Project</p>
+            </div>
+            <p class="mt-2">People</p>
+            <p class="mt-2">Assets</p>
+            <p class="mt-2">Images</p>
+          </div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cloud-upload"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383" />
+            <path fill-rule="evenodd"
+              d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center ms-2 gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" fill="currentColor" class="bi bi-filter"
+          viewBox="0 0 16 16">
+          <path
+            d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+        </svg>
+        <p class="mt-3 fw-bold">Recommended</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="currentColor" class="bi bi-chevron-down"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+        </svg>
+      </div>
+    </nav>
+  </nav>
+
+
+  <!-- section-two -->
+  <div class="sec-two">
+
+    <!-- row-one -->
+    <div class="row-one d-flex m-3 gap-4">
+
+
+      <div class="row-one-one ">
+        <img src="img/behance images 2/imgi_290_611dd6227991729.Y3JvcCwxMTEyLDg3MCw0MSwzMTM.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold"> Beautiful Escape </span><br>Meroo Seth</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>350</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>2.8k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row-one-two">
+        <img src="img/behance images 2/imgi_295_ac4360229769089.Y3JvcCwxMTA4LDg2NywxMzcsMA.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">Hotline </span><br>Saba Rukhadze</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>462</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>3.5k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-one-three">
+        <img src="img/behance images 2/imgi_311_65c41e154037511.Y3JvcCwxMTMwLDg4NCwxMzQsMA.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">Do more with behance</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <img src="img/behance images 2/imgi_320_03a27b235717091.Y3JvcCw0MDQ2LDMxNjQsMCww.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"><span class="fw-bold">PaGol</span><br>Multiple Owners</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>970</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>7.8k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- row-two -->
+    <div class="row-two d-flex m-3 gap-4">
+
+      <div class="row-two-one">
+        <img src="img/behance images 2/imgi_321_03a27b235717091.Y3JvcCw0MDQ2LDMxNjQsMCww.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">ZEWAY:Revolution </span><br>URBAN MOBILITY in FRANCE</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>670</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>1.2k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-two-two">
+        <img src="img/behance images 2/imgi_330_607ffa228237371.Y3JvcCwzMjMyLDI1MjgsMCww.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">PANTERO666</span><br>Multiple Owners</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>900</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>4.2k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-two-three">
+        <img src="img/behance images 2/imgi_343_bf2b5e209804019.6708c3a495a00.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">DEEP CERAMICS-</span><br>Rebranding & Packanging</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>359</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>1.9k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-two-four">
+        <img src="img/behance images 2/imgi_374_6cb842232888759.Y3JvcCwxMjAwLDkzOCwwLDE4Nw.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">THE NEXT</span><br>Multiple Owners</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>350</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>2.8k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- row three -->
+    <div class="row-three d-flex m-3 gap-4">
+
+      <div class="row-three-one">
+        <img src="img/behance images 2/imgi_392_24c4bf196516929.Y3JvcCw0MDQwLDMxNjAsMCww.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">RE8 THE LOST SCIENCE</span><br>Multiple Owners</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>950</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>4.8k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row-three-two">
+        <img src="img/behance images 2/imgi_396_96498d234249197.Y3JvcCw5MTgsNzE4LDAsMjUy.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">Encyclopedia of</span><br>Conservatism</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>435</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>4.1k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row-three-three">
+        <img src="img/behance images 2/imgi_413_e87eb1204141831.Y3JvcCwyNjcyLDIwODksMCwxMw.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">Series of Portfolio</span><br>Multiple Owners</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>380</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>2.1k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row-three-four">
+        <img src="img/behance images 2/imgi_426_1371ac194248247.Y3JvcCw4MDgsNjMyLDAsMA.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">World school Chess</span><br>ONY Agencies</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>910</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>1.1k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- row-four -->
+    <div class="row-four d-flex m-3 gap-4">
+
+      <div class="row-four-one">
+        <img src="img/behance images 2/imgi_432_d6338d235660851.Y3JvcCwxMzIzLDEwMzUsMzYzLDgxNQ.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">Bowl & Berry</span><br>Lina Argon</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>734</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>5.5k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-four-two">
+        <img src="img/behance images 2/imgi_449_4336ab234761881.Y3JvcCwzMTcwLDI0ODAsMzEsMA.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">Cultural FC design</span><br>Laundary</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>870</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>1.9k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-four-three">
+        <img src="img/behance img 3/imgi_256_ada6b4195607011.Y3JvcCwzOTk5LDMxMjgsMCw4NjE.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold"> Selected Project 2023 </span><br>Yaniik saal</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>780</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>3.1k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-four-four">
+        <img src="img/behance img 3/imgi_266_b59815226353923.Y3JvcCw0NjAwLDM1OTgsMCwxNTgy.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">Melitta Aromaboy</span><br>chanyoung choi</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>900</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>9.8k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- row-five -->
+    <div class="row-five d-flex m-3 gap-4">
+
+      <div class="row-five-one">
+        <img src="img/behance img 3/imgi_275_93f200233660153.Y3JvcCwyNTMwLDE5NzksODcwLDA.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">ESUSU </span><br>Multiple Owners</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>740</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>5.8k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-five-two">
+        <img src="img/behance img 3/imgi_285_6f1376226899591.Y3JvcCwxNjk1LDEzMjUsNjQ2LDYwNA.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">Postcards</span><br>Alexander ribibi</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>201</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>2.2k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-five-three">
+        <img src="img/behance img 3/imgi_296_6ac6ce213905495.Y3JvcCwxODQxLDE0NDAsNDEsMA.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">Overgrown</span><br>Nuclear plant</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>600</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>3.9k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-five-four">
+        <img src="img/behance img 3/imgi_300_0865f4169073417.Y3JvcCw5NTUsNzQ3LDIyNyw1MDY.png" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">Bird Trip</span><br>Multiple Owners</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>257</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>1.1k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- row-six -->
+    <div class="row-six d-flex m-3 gap-4">
+
+      <div class="row-six-one">
+        <img src="img/behance img 3/imgi_314_d3ae21201810815.Y3JvcCw5OTcsNzgwLDE5Miww.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">Plant island</span><br>Diego jota</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>107</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>395</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-six-two">
+        <img src="img/behance img 3/imgi_325_d9b2c1215759675.Y3JvcCwxNDUwLDExMzQsNTI0LDEwNA.png" alt="" width="400px"
+          height="313px" class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p class="fw-bold"> <span class="fw-bold">Norway Thought</span><br>Multiple Owners</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>270</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>900</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-six-three">
+        <img src="img/behance img 3/imgi_329_e2db5a235503429.Y3JvcCwxMzg0LDEwODMsMjY3LDA.jpg" alt="" width="400px"
+          height="313px" class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold"> Beautiful Escape </span><br>Meroo Seth</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>350</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>2.8k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-six-four">
+        <img src="img/behance img 3/imgi_338_981005195696937.Y3JvcCw1MDAwLDM5MTAsMCw0OQ.jpg" alt="" width="400px"
+          class="border rounded-3">
+        <div class="one-pg d-flex">
+          <div class="one-pg-left">
+            <p> <span class="fw-bold">Bold Bean Cafe</span><br>Andreas Gulag</p>
+          </div>
+          <div class="one-pg-right d-flex ms-auto align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-hand-thumbs-up-fill mb-3" viewBox="0 0 16 16">
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+              </svg>
+              <p>239</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill mb-3" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+              </svg>
+              <p>1.4k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- section three -->
+  <div class="d-flex flex-column justify-content-center align-items-center mt-3 gap-2">
+    <p class="fw-bold fs-4 text-center">Sign in to search the world's largest <br> creative network</p>
+    <div class="d-flex align-items-center justify-content-center rounded-5"
+      style="width: 250px; height: 50px; border: 1px solid #d3d3d3;">
+      <img src="img/behance img 3/google logo.png" alt="" width="30px">
+      <p class="mt-2 fw-bold">continue with google</p>
+    </div>
+    <div class="d-flex align-items-center justify-content-center rounded-5"
+      style="width: 250px; height: 50px; border: 1px solid #d3d3d3;">
+      <img src="img/behance img 3/faebook logo.png" alt="" width="30px">
+      <p class="mt-2 fw-bold">continue with facebook</p>
+    </div>
+    <div class="d-flex align-items-center justify-content-center rounded-5 gap-2"
+      style="width: 250px; height: 50px; border: 1px solid #d3d3d3;">
+      <img src="img/behance img 3/apple logo.png" alt="" width="25px">
+      <p class="mt-2 fw-bold">continue with apple</p>
+    </div>
+    <a href="" class="fs-5 mt-2">view more</a>
+    <p>or</p>
+    <p class="fw-bold fs-5 me-5 d-flex " style="width: 300px; height: 50px;">Continue with Mail</p>
+  </div>
+
+
+
+  <div class="mt-4">
+    <div class="" style="width: 100%; height: 5px; background: linear-gradient(90deg, red, blue, yellow, green);"></div>
+    <p class=" fs-5 d-flex justify-content-center"> <span class="fw-bold">Upgrade to Behance Pro today:</span> Get
+      advanced analytics, a custom portfolio website, and more features to grow your
+      creative career.
+      <a href="" class="fw-bold">Start your 7 day free trial</a>
+    </p>
+  </div>
+
+
+
+  <div class="position-relative" style="width: 100%; height: 700px; background-color: #191919;">
+    <div class="d-flex">
+      <div class="m-5">
+        <img src="img/behance img 3/behance in white text.png" alt="" width="200px">
+      </div>
+      <div class=" second text-white d-flex" style="margin-right: 170px; margin-top: 90px; gap: 80px;">
+        <div class="d-flex flex-column">
+          <p class="fs-5 fw-bold">Built For Creatives</p>
+          <div class="fw-semibold mt-4">
+            <p>Try Behance Pro</p>
+            <p>Find Inspiration</p>
+            <p>Get Hired</p>
+            <p>Sell Creative Assets</p>
+            <p>Sell Freelance Services</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column">
+          <p class="fs-5 fw-bold ">Find talent</p>
+          <div class="fw-semibold mt-4">
+            <p>Post a Job</p>
+            <p>Graphic Designers</p>
+            <p>Photographers</p>
+            <p>Video Editors</p>
+            <p>Web Designers</p>
+            <p>Illustrators</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column">
+          <p class="fs-5 fw-bold">Behance</p>
+          <div class="fw-semibold mt-4">
+            <p>About Behance</p>
+            <p>Adobe Portfolio</p>
+            <p>Download the App</p>
+            <p>Blog</p>
+            <p>Carrers</p>
+            <p>Help Center</p>
+            <p>Contact Us</p>
+            <p>Login</p>
+          </div>
+        </div>
+
+
+        <div class="d-flex flex-column">
+          <p class="fs-5 fw-bold">Social</p>
+          <div class="d-flex align-items-center gap-2">
+            <img src="img/behance img 3/insta logo black.png" alt="" width="20px" class="border rounded-pill mt-3">
+            <p class="fw-semibold mt-4">Instagram</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img src="img/behance img 3/black twiter logo.png" alt="" width="20px" class="border rounded-pill">
+            <p class="fw-semibold mt-2">Twitter</p>
+          </div>
+          <div class="d-flex align-items-center gap-2 ">
+            <img src="img/behance img 3/pintrest.png" alt="" width="20px" class="border rounded-pill">
+            <p class="fw-semibold mt-2">Pinterest</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img src="img/behance img 3/facebook black logo.png" alt="" width="20px" class="border rounded-pill">
+            <p class="fw-semibold mt-2">Facebook</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img src="img/behance img 3/linkedin logo.png" alt="" width="20px" height="20 px"
+              class="border rounded-pill">
+            <p class="fw-semibold mt-3">Linkedin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white mt-5 d-flex" style="width: 80%; height: 1px; margin-left: 140px;"></div>
+    <div class="d-flex">
+      <div class="" style="margin-left: 140px;">
+        <img src="img/behance img 3/adobe logo.png" alt="" width="100px" class="mt-5">
+      </div>
+      <div class="d-flex align-items-center" style="margin-top: 35px; margin-left: 40px;">
+        <img src="img/behance img 3/c.png" alt="" width="10px" height="10px">
+        <p class="text-white fw-bold  mt-3">2025 Adobe Inc. All rights reserved.</p>
+      </div>
+      <div class="bottom-right">
+        <div class="wait">
+          <div class="list bg-white position-absolute border rounded-3  flex-column justify-content-center fw-semibold"
+            style="width: 100px; height: 460px; margin-top: -450px; margin-left: 270px;">
+            <p class="mt-1 ms-2">English <br> Čeština
+              <br>Dansk <br>Deutsh <br>Español
+              <br>Français
+              <br>Italiano <br>Nederlands <br>Norsk <br>Polski
+              <br>Portugues <br>Русский
+              <br>Suomi <br>Svenska <br>Türkçe
+              <br>日本語<br>한국어<br>中文(简体) <br>中文(繁體)
+            </p>
+          </div>
+          <div class="English d-flex align-items-center fw-semibold" style="margin-left: 300px; margin-top: 30px;">
+            <p class="text-white mt-3">English</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-down "
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="d-flex text-white fw-semibold gap-3 fs-6" style="margin-left: 950px; margin-top: -45px;">
+      <p>TOU</p>
+      <p>Privacy</p>
+      <p>Community</p>
+      <p>Cookie preferances </p>
+      <p>Do not sell or share my personal information</p>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
